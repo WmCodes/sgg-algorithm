@@ -25,6 +25,8 @@ public class BinarySearch {
         if (left > right){
             return -1;
         }
+        // 插值查找:
+        // int mid = left +(right-left)*(findVal-arr[left])/(arr[right]-arr[left])
 
         int mid = (left+right)/2;
         int midVal = arr[mid];
